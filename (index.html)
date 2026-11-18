@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🧸🎀</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating Hearts & Sparkles Background -->
+    <div class="floating-bg" id="floatingBg"></div>
+
+    <!-- 1. Welcome Screen -->
+    <div id="welcomeScreen" class="screen">
+        <div class="welcome-card">
+            <div class="teddy-icon">🧸</div>
+            <h1>শুভ জন্মদিন! 🎀</h1>
+            <p>তোমার জন্য একটি ছোট সারপ্রাইজ অপেক্ষা করছে...</p>
+            <button class="btn" onclick="openCelebration()">সারপ্রাইজটি দেখাও ✨</button>
+        </div>
+    </div>
+
+    <!-- 2. Main Celebration Content -->
+    <div id="mainContent" class="screen hidden">
+        
+        <!-- Music Button -->
+        <button id="musicBtn" class="music-btn" onclick="toggleMusic()">🎵 মিউজিক চালু করো</button>
+        <audio id="bgMusic" loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-cute.mp3" type="audio/mpeg">
+        </audio>
+
+        <header>
+            <h1>Happy Birthday Dear! 🧸🎀</h1>
+            <p class="subtitle">আজকের দিনটি শুধু তোমার জন্য স্পেশাল!</p>
+        </header>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>📸 সুন্দর মুহূর্তগুলো</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=500" alt="Memory 1"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500" alt="Memory 2"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=500" alt="Memory 3"></div>
+            </div>
+        </section>
+
+        <!-- Letter Section -->
+        <section class="letter-section">
+            <h2>💌 আমার একটি বিশেষ চিঠি</h2>
+            <div class="letter-box">
+                <p>প্রিয়,</p>
+                <p>আজ তোমার জীবনে আরও একটি দারুণ বছর যোগ হলো। তোমার মুখের হাসি সবসময় এমনই উজ্জ্বল থাকুক, আর জীবনের প্রতিটা পদক্ষেপে তুমি সফল হও। তোমার আজকের দিনটি যেন ভালোবাসা, আনন্দ এবং সুখে ভরে থাকে। শুভ জন্মদিন! 🧸✨</p>
+                <p class="sign-off">ইতি,<br>তোমার বন্ধু 🎀</p>
+            </div>
+        </section>
+
+        <!-- Interactive Birthday Cake Section -->
+        <section class="cake-section">
+            <h2>🎂 কেক কাটো!</h2>
+            <div class="cake-container">
+                <div class="candle" id="candle" onclick="blowCandle()">
+                    <div class="flame" id="flame"></div>
+                </div>
+                <div class="cake-body">
+                    <div class="frosting"></div>
+                </div>
+            </div>
+            <p id="cakeMessage" class="cake-msg">মোমবাতিতে ক্লিক করে ফুঁ দিয়ে নিভিয়ে দাও! 🕯️</p>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ and lots of sparkles!</p>
+        </footer>
+    </div>
+
+</body>
+</html>
